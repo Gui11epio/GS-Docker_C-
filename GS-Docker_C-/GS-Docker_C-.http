@@ -1,0 +1,6 @@
+@GS_Docker_C__HostAddress = http://localhost:5078
+
+GET {{GS_Docker_C__HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
