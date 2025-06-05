@@ -16,7 +16,7 @@
       "launchUrl": "swagger",
         "environmentVariables": {
             "ASPNETCORE_ENVIRONMENT": "Development",
-            "CONEXAO_GS": "server=xxxxxx;port=3306;database=xxxxxx;user=xxxxxx;password=xxxxxxx"
+            "CONEXAO_GS": "server=host.docker.internal;port=3306;database=geoalerta_db;user=geo_user;password=geo_pass"
         },
       "dotnetRunMessages": true,
       "applicationUrl": "https://localhost:7113;http://localhost:5257"
