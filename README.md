@@ -220,7 +220,19 @@ Com Chuva e Temperatura mais extremas:
   
 ![image](https://github.com/user-attachments/assets/0071ebd0-904a-48d0-8b3a-e9245571be3d)
 
+## Comandos Docker usados
 
+```bash
+docker network create geo_net
+
+docker run -d --name geo_mysql --network geo_net -e MYSQL_DATABASE=geoalerta_db -e MYSQL_USER=geo_user -e MYSQL_PASSWORD=geo_pass -e MYSQL_ROOT_PASSWORD=rootpass -v geo_mysql_data:/var/lib/mysql -p 3307:3306 mysql:8.0
+
+docker build -t geoalerta-api .
+
+docker run -d --name geo_api --network geo_net -p 5000:8080 -e ASPNETCORE_ENVIRONMENT=Development -e CONEXAO_GS="server=geo_mysql;port=3306;database=geoalerta_db;user=geo_user;password=geo_pass" geoalerta-api
+
+docker run -d --name geo_phpmyadmin --network geo_net -e PMA_HOST=geo_mysql -e PMA_PORT=3306 -p 8080:80 phpmyadmin/phpmyadmin
+```
 
 
 
