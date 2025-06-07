@@ -202,3 +202,26 @@ Com Chuva e Temperatura mais extremas:
 🔸Score ≈ 30 + 20 + 4 + 5 + 15 + 1.5 = 75.5 → CRÍTICO
 
 
+## Print dos Logs
+
+- Network geo_net
+  
+![image](https://github.com/user-attachments/assets/e4837d0a-7f88-4bd8-b95d-36c5dda5fcf5)
+
+- Os 3 containers rodando
+  
+![image](https://github.com/user-attachments/assets/e1444a9a-d734-4a0f-853b-cf7b91229127)
+
+- As 3 imagens criadas
+  
+![image](https://github.com/user-attachments/assets/35d89d0b-ea23-4fd8-adf6-2d0264581b13)
+
+- O volume criado
+  
+![image](https://github.com/user-attachments/assets/0071ebd0-904a-48d0-8b3a-e9245571be3d)
+
+
+
+
+
+
